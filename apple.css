@@ -1,0 +1,859 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    text-decoration: none;
+    color: #fff;
+}
+
+body{
+	background-color: #000;
+}
+
+
+                                        /*barra de navegación*/
+
+.nav__responsive-ul{/*(PERSONALIZAMOS EL .nav__responsive-ul Y HACEMOS QUE NO APAREZCA)*/
+	display: none;
+}
+
+
+.nav{/*(PERSONALIZAMOS EL NAV)*/
+	height: 40px;
+	width: 100%;
+	position: fixed;
+}
+
+.nav__ul{
+	background-color: #00ffff;
+}
+
+.nav__li{/*(PERSONALIZAMOS EN NAV__LI)*/
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+}
+
+.nav__li:hover{
+	color:#000;
+}
+
+.nav__li a:hover{
+	color: #000;
+}
+
+
+.nav__li a{   /*(PARTE DEL ENLACE (a) EN NAV__LI)*/
+	color: #fff;
+	text-decoration: none; 
+	font-weight: 550;
+}
+
+.nav__li i {/*(PARTE DEL ICONO (i) EN NAV__LI)*/
+	width: 30px;
+	box-sizing: border-box; /*(Con esto simplificamos nuestra vida bastante ya que si queremos una caja que mida 250px de esta forma tendremos la seguridad que será de la medida que le hemos indicado sin importar si usamos bordes o paddings. ¡Qué suficiente problemas nos da la maquetación para sufrir con estas cosas! 😆)*/
+	margin-right: 1px;
+	font-weight: 550;
+}
+
+@media only screen and (max-width:  500px) {/*(LE DECIMOS QUE CUÁNDO LA PANTALLA TOME UNA RESOLUCIÓN MENOS A 500 PIXELES TOME LAS SIGUIENTES PROPIEDADES)*/
+	.nav__ul{
+		display: none; /*(QUE AL .nav__ul NO LO REPRESENTE EN EL NAVEGADOR. DE ESTE MODO SOLO QUEDARÁ PARA MOSTRARSE LA LISTA (LI) CUÁNDO LO ADAPTEMOS A MÓVILES)*/
+		
+	}
+
+	.nav{
+		height: 37px;
+		width: 100%;
+		background-color: #00ffff;
+	}
+
+
+	.nav__responsive-ul{
+		display: block;  /*(QUE EL .nav__responsive-ul (UL) aparezca en el menú mobile y SE COMPORTE COMO BLOQUE CUÁNDO SE VEA EN MÓVILES)*/
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		padding-top: 27px;
+		height: 37px;
+		margin-top: 37px;
+		padding-top: 27px;
+    background-color:#00ffff;
+	}
+
+	.nav__responsive-button-container{
+		position: absolute;
+		width: 100%;
+		font-size: 25px;
+		background-color: #00ffff;
+		z-index: 100;
+		margin-top: -64px;
+	}
+
+
+	.nav__responsive-button{
+
+		float: right;
+		font-size: 25px;
+		padding: 9px 20px;
+		text-align: right;
+		width: 100%;
+
+	}
+
+	.nav__li-container{
+		position: relative;
+		top:-1000px;
+		height: calc(100vh - 64px);
+		background-color: #00ffff;
+		transition: all 1s;
+		z-index: 1;
+		width: 75%;
+		padding-top: 27px;
+	}
+
+	.nav__responsive-li{
+		width: 100%;
+		padding: 9px 20px;
+	}
+
+	.nav__responsive-li a:hover{
+		color: #fff;
+	}
+	
+
+	.nav__responsive-li i{
+		box-sizing: border-box;
+		text-align: center;
+		margin-right: 5px;
+		width: 30px;
+		color: #000;
+	}
+
+	.nav__responsive-li a{
+		color: #000;
+		text-decoration: none;
+	}
+
+	.nav__responsive-li b{
+		color: #000;
+	}
+
+
+	.nav__responsive-ul:hover .nav__li-container{
+		top: -27px;
+	}
+
+	.b-menúresponsive{
+		color: #000;
+	}
+
+
+
+}/*------------------------INICIO header2-content------------------------*/
+body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+
+}
+
+.content {
+  max-width: 40rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-video video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #303952;
+  z-index: 1;
+  opacity: .85;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+}
+
+.header-content .logo img{
+	width: 250px;
+	border: solid #000;
+	border-radius: 15px;
+}
+
+
+@media (max-width: 960px) {
+  .content {
+    padding: 0 3rem 0 3rem;
+  }
+}
+
+/*------------------------INICIO FOOTER------------------------*/
+
+.footer{
+	width: 100%;
+	padding: 50px /*arriba y abajo*//*en los costados*/;
+	background-color: #000;
+    background-size: cover; /*img centrada*/
+    background-attachment: fixed;
+    margin-top: 0px;
+
+}
+
+
+
+.container__footer{
+	display: flex; /*Columnas una al lado de otra*/
+	flex-wrap: wrap;/*para que se pongan una debajo de la otra cuándo no entren en una sola linea*/
+	justify-content: space-between;/*para que puedan ocupar el ancho completo del proyecto*/
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 30px;/*creamos un espacio entre el contenedor del footer y el resto del contenido que está arriba*/
+
+
+}
+
+.box__footer{
+	display: flex; /*para que sus elementos se pongan uno debajo del otro (H2 y Enlaces)*/
+	flex-direction: column;/*para que sus elementos se pongan en columna (H2 y Enlaces)*/
+	padding: 40px;/*para que mantengan un pequeño margen entre el titulo y el contenedor*/
+  flex-wrap: wrap;  
+}
+
+.box__footer .logo img{
+	width: 250px;
+	margin-top: 16px;
+	margin-left: 0px;
+	margin-bottom: 100px;
+	border: solid #000;
+	border-radius: 15px;
+
+
+}
+
+.box__footer .terms{
+	max-width: 350px;/*lo achicamos al ancho*/
+	margin-top: -45px;/*para que se despegue del logo*/
+	font-weight: 500;
+	color: #fff;
+	font-size: 18px;
+}
+
+.box__footer h2{
+	margin-top: 10px;
+	margin-bottom: 23px; /*(asi bajan los enlaces que están debajo de los H2)*/
+	color: #fff;
+	font-weight: 700;
+}
+
+
+.box__footer a{
+	margin-top: 10px;
+	color: #8B861F;
+	font-weight: 600;
+}
+
+.box__footer a:hover{
+	opacity: 0.8;
+	color: #fff;
+}
+
+.box__footer a .fab{ /*(ICONOS y ENLACES)*/
+	font-size: 20px;
+
+}
+
+.box__footer i{
+	color:#8B861F ;
+	margin-right: 10px;
+}
+
+.box__copyright{
+	max-width: 1200px;
+	margin: auto;
+	text-align: center;
+	padding: 0 /*costados*/40px /*arriba y abajo*/;
+}
+
+.box__copyright p{
+	margin-top: 20px;
+	color: #fff;
+}
+
+.box__copyright hr{
+	border: none;
+	height: 3px;
+	background-color : #fff;
+}
+
+
+
+
+/*--------------------------------------------------grid--------------------------------------------------*/
+
+
+
+.grid-container *{ /*(propiedades para los descendientes del grid container que es lo que se encuentra dentro del mismo grid-container)*/
+
+	padding: 10px;
+	margin-top: 80px;
+	text-align: center;
+}
+
+.grid-container{ /*ahora todos los hijos de primer nivel del grid-container seran GRID ITEMS*/
+	display: grid;
+	grid-gap: 10px;/*(gap establece los espacios ( medianiles ) entre filas y columnas)*/
+    grid-template-areas:/*(las areas que va a tener nuestro GRID)*/ 
+     "nav"
+     "header-content"
+     "main"
+     "slider" 
+     "main4"
+     "main2"
+     "footer";
+}
+
+
+.footer{
+	grid-area: footer; /*(ocupa el área footer )*/
+	margin-top: 100px;
+	
+}
+
+.header-content{
+	grid-area: header-content;
+	
+
+}
+
+.main{
+	grid-area: main;/*(ocupa el área main )*/
+	text-align: center;
+	margin-top: 50px;
+	padding: 50px;
+	background-color: #000;
+	margin-bottom: 0px;
+}
+
+.slider{
+	grid-area: slider;
+
+}
+
+.main4{
+	grid-area: main4;
+	background-color: #000;
+	margin-bottom: 100px;
+	margin-top: 0px;
+	padding: 50px;
+}
+
+.main2{
+	grid-area: main2; /*(ocupa el área main2 )*/
+  text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	padding: 50px;
+	background-color: #000;
+}
+
+
+.nav{
+	grid-area: nav;
+	background-color: #000;
+}
+
+/*espacios entre cajas (margen)*/
+	.grid-container{
+
+	grid-template: 
+	"nav nav" 100px
+	"header-content header-content" 100px
+	"main main" 100px
+	"main4 main4" 0px
+	"main2 main2" 100px
+	"footer footer" 100px;
+
+} 
+
+/*ESTA PARTE SE EJECUTA CUÁNDO LA PANTALLA ALCANZA UN TAMAÑO DE MÁS 600PX QUE SERIA MODO TABLET*/
+
+@media (min-width: 600px){
+ 
+.grid-container{
+
+/*espacios entre cajas (margen)*/
+	grid-template:
+	"nav nav" 200px 
+	"header-content header-content" 100px 
+	"main main" 100px
+	"main4 main4" 0px
+	"main2 main2" 100px
+	"main3 main3" 100px
+	"footer footer" 100px;
+}
+
+.slider{
+	display: none;
+}
+
+}
+
+
+
+
+
+/*containers*/
+.sobre-nosotros-img-container{
+    height: 300px;
+	  width: 300px;
+	  display: inline-block;
+	  margin-top: 0px;
+	  align-content: center;
+}
+
+.sobre-nosotros-img-container .sobre-nosotros-img{
+    height: 300px;
+    width: 300px;
+    border: solid #fff;
+    border-radius: 30px;
+	object-fit: fill;
+	object-fit: cover;
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+.h1-inicio{
+	background-color: #00ffff;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	color: #000080;
+	text-align: center;
+}
+
+.p-inicio{
+	margin-bottom: 30px;
+	text-align: center;
+	border: solid #00ffff;
+	border-radius: 30px;
+}
+
+#h1-historia{
+	background-color: #fff;
+	margin-top: -30px;
+	margin-bottom: 30px;
+	color: #000;
+	text-align: center;
+	border: solid #fff;
+	border-radius: 10px;
+}
+
+
+
+
+/*texto*/
+
+.texto-interno{
+	padding: 45px;
+	margin: 10px;
+	background-color: #000;
+	border: solid #fff;
+	border-radius: 30px;
+	margin-top: 30px;
+}
+
+/*main4*/
+
+.gallery{
+	display: grid;
+	gap: 1rem;
+	grid-auto-rows: 21rem;/*La propiedad grid-auto-rows de CSS especifíca el tamaño de una nueva fila*/
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));/*La propiedad grid-template-columns especifica el número (y el ancho) de las columnas en un diseño de cuadrícula.*/
+	grid-auto-flow: dense; /*hace que sea flexible y responsive*/
+	text-align: center;
+
+}
+
+.card__feature{
+	grid-column: span 1; /*columnas divisorias*/
+
+}
+
+
+
+.gallery .card__img{
+	
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+}
+
+.card__img img{
+	height: 200px;
+	width: 200px;
+  border: solid #fff;
+	object-fit: fill;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.card__img .card__title a{
+	font-size: 18px;
+	color: #00ff00;
+}
+
+.card__img .card__title a:hover{
+	color: #008b8b;
+}
+
+.card__img .productos-p{
+	font-size: 20px;
+
+}
+
+#productos-h1{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #fff;
+	border-radius: 10px;
+	font-size: 30px;
+	color: #000;
+	border: transparent;
+}
+
+#p-productos-h1{
+	margin-bottom: 40px;
+	text-align: center;
+	margin-top: 50px;
+	background-color: #fff;
+	border-radius: 10px;
+	font-size: 30px;
+	color: #000;
+	border: transparent;
+}
+
+#párrafo-h1{
+	margin-bottom: 40px;
+	font-size: 23px;
+}
+
+
+/*------------------------------------------------------main2-------------------------------------------------------*/
+
+
+.gallery-main2{
+	display: grid;
+	gap: 1rem;
+	grid-auto-rows: 21rem;/*La propiedad grid-auto-rows de CSS especifíca el tamaño de una nueva fila*/
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));/*La propiedad grid-template-columns especifica el número (y el ancho) de las columnas en un diseño de cuadrícula.*/
+	grid-auto-flow: dense; /*hace que sea flexible y responsive*/
+	text-align: center;
+}
+
+.card__feature-main2{
+	grid-column: span 1; /*columnas divisorias*/
+
+}
+
+
+.gallery-main2 .card__img-main2{
+	
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+}
+
+.card__img-main2 img{
+	height: 200px;
+	width: 200px;
+  border: solid #fff;
+  border-radius: 10px;
+	object-fit: fill;
+	object-fit: cover;
+	
+	
+}
+
+.card__img-main2 .card__title-main2 a{
+	font-size: 25px;
+	color: #DEE8E0;
+}
+
+.card__img-main2 .card__title-main2 a:hover{
+	color: #A0A0A0;
+}
+
+
+#news-main2{
+	text-align: center;
+	margin-bottom: 20px;
+	margin-top: 0px;
+	background-color: #fff;
+	color: #000;
+	border: solid #fff;
+	border-radius: 10px;
+}
+
+/*------------------------INICIO 3D PRO (está dentro de el main4)------------------------*/
+#Experiencia-3D{
+	color: #000;
+	background-color: #fff;
+	border: solid #transparent;
+	border-radius: 10px;
+	margin-top: 40px;
+}
+
+
+.container__card{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__father{
+    margin: 20px;
+    perspective: 1000px;
+}
+
+.card__father:hover .card{
+    transform: rotateY(180deg);
+}
+
+
+.card{
+    width: 350px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 600ms;
+}
+
+.card__front{
+    background-size: cover;
+    background-position: center;
+}
+
+
+.card__front,
+.card__back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 20px;
+}
+
+.card__back{
+    transform: rotateY(180deg);
+    background: white;
+}
+
+.body__card_front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: translateZ(60px);
+}
+
+/*.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    border-radius: 20px;
+}*/
+
+.body__card_back{
+    padding: 40px;
+    text-align: center;
+    transform: translateZ(60px);
+}
+
+.body__card_back p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.body__card_back button{
+    padding: 10px 40px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #58B0F6;
+    box-shadow: 1px 1px 30px -5px #58B0F6;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+}
+
+.body__card_back button:hover{
+    box-shadow: 1px 1px 30px 0px #449de6;
+}
+
+.body__card_back h1{
+	color: #000;
+}
+
+.body__card_back p{
+	color: #000;
+}
+
+.body__card_back .button{
+	background-color: #000;
+}
+
+/*------------------------SLIDER------------------------*/
+.slider{
+	width: 95%;
+	height: 30%;
+	margin: auto;
+	overflow: hidden; /*para que a 1ra vista no nse vean los demas elementos uno al lado de otro*/
+    margin-bottom: -170px;
+    margin-top: -20px;
+}
+
+.slider ul{
+	display: flex; /*colocamos una imagen al lado de la otra ya que están en lista*/
+	padding: 0;
+	width: 400%;
+	height: 30%;
+	animation: cambio 20s infinite alternate;/*para que vuelvan las img de atras hacia delante*/
+	animation-timing-function: linear; /*para que empiece siempre la misma velocidad la animación*/ 
+}
+
+.slider li{
+	width: 100%;
+
+	list-style: none;
+}
+
+
+.slider img{
+	width: 100%;
+	height: 30%;
+	object-fit: cover;
+}
+
+#bienvenido-slider{
+	background-color: #fff;
+	color: #000;
+	border: #transparent;
+	border-radius: 50%;
+	margin: 10px;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}        /*primera imagen: 1s*/
+	20% {margin-left: 0;}
+
+	25%{margin-left: -100%;}    /*segunda imagen:4s*/
+	45%{margin-left: -100%;}
+
+	50%{margin-left: -200%;}    /*tercera imagen:4s*/
+	70%{margin-left: -200%;}
+
+	75%{margin-left: -300%;}    /*cuarta imagen:4s*/
+	100%{margin-left: -300%;}  
+}
+
+/*------------------------CONTENEDOR BIENVENIDA------------------------*/
+
+
+#contenedor-bienvenida{
+	margin: auto;
+}
+
+#h1-maquina{
+	color: #fff;
+	margin-bottom:100px;
+	margin-top: 100px;
+}
+
+/*#h1-maquina #span-maquina{
+	position: absolute;
+	right: 0;
+    width: 0;
+    background-color: #000;
+    border-left: 1px solid #fff;
+
+
+    animation: maquina 5s infinite alternate ;
+}
+
+@keyframes maquina {
+	from{
+		width: 100%;
+	}
+
+	to{
+		width: 0;
+	}
+}
+*/
+

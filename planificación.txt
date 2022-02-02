@@ -1,0 +1,60 @@
+APPLE WEB: Versión desktop/mobile
+
+¿Qué es Mobile y Desktop? (Código adaptado para las 2 versiones para una mejor experiencia de usuario tanto en web como en mobile/tablet).
+
+En una versión desktop disponemos de un espacio más amplio donde «jugar» con la disposición de los elementos.
+En una versión mobile se suelen colocar los elementos en una única columna.
+Esto supone que el orden en el que tiene que aparecer la información prima sobre el resto de cosas.
+
+0-Head: SEO/METADATOS/Viewport and Script
+
+1-Inicio:
+
+-Bienvenida con video con experiencia apple de fondo.
+
+-Frases/Marketing dentro de la mismo header en 1 párrafo.
+
+2-Productos:
+
+-Exhibición de productos sellados y usados.
+ 
+-Mostrar store + productos + link de wsp enlazado (hacer un link especifico para cada producto individual de apple)
+(este que pongo es el mio, hay que crear uno para el wsp oficial de la manzanita y también para vendedores autorizados):https://walink.co/9edb40)
+
+-Enlaces funcionales con redirección al usuario hacia el whatsapp oficial para consultas o futuras ventas con mensaje programado con link de wsp 
+
+3- Marketing 3D:
+ - Imagen rotatoria + info de producto/publicidad de la empresa.
+ - Enlace directo para captar ventas.
+ - Mensaje personalizado en el mismo hacia el canal de venta de whatsapp.
+
+4-Sobre nosotros (Historia de inicio): 
+
+-Secuencia de historia del comienzo de emprendimiento.
+
+-Imagen diferencial exclusiva para dicha sección.
+
+-Posibilidad de agregar enlaces redireccionales en el texto.
+
+5-Vendedores autorizados (Sección de vendedores):
+
+-Sección con galeria de vendedores.
+
+-Enlace directo hacia el whatsapp con mensaje programado para cada vendedor que el usuario o cliente seleccione para que lo atienda.
+
+6-Footer:
+
+-Info para recibir feedback.
+
+-Interacción de redes sociales especificas que se deseé.
+
+-Inclusión de nuevas redes de personal humano para la empresa mediante la sección footer/empleo vía e-mail para que el usuario mande su CV a calificar).
+-Servicio Tecnico con enlace redireccional PÁGINA_BLANK/ENLACE REDIRECCIONAL (opción recomendada WSP o E-MAIL).
+
+-Ayuda (e-mail) PÁGINA _BLANK/ENLACE REDIRECCIONAL.
+
+-Empleo (CV para vendedores futuros) PÁGINA _BLANK/ENLACE REDIRECCIONAL.
+
+
+
+
