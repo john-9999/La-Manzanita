@@ -774,7 +774,7 @@ body {
 	height: 30%;
 	margin: auto;
 	overflow: hidden; /*para que a 1ra vista no nse vean los demas elementos uno al lado de otro*/
-    margin-bottom: -170px;
+    margin-bottom: -120px;
     margin-top: -20px;
 }
 
